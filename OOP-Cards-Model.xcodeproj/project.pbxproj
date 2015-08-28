@@ -23,6 +23,10 @@
 		722736771948E278002A8E6A /* BaseballPlayerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736731948E278002A8E6A /* BaseballPlayerSpec.m */; };
 		722736781948E278002A8E6A /* CardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736741948E278002A8E6A /* CardSpec.m */; };
 		722736791948E278002A8E6A /* PlayingCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722736751948E278002A8E6A /* PlayingCardSpec.m */; };
+		A06AF6E01B909F22008C5B24 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = A06AF6DF1B909F22008C5B24 /* Card.m */; };
+		A06AF6E91B90A198008C5B24 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A06AF6E81B90A198008C5B24 /* PlayingCard.m */; };
+		A06AF6EC1B90A1B2008C5B24 /* BaseballCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A06AF6EB1B90A1B2008C5B24 /* BaseballCard.m */; };
+		A06AF6EF1B90A7EA008C5B24 /* BaseballPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A06AF6EE1B90A7EA008C5B24 /* BaseballPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,14 @@
 		722736731948E278002A8E6A /* BaseballPlayerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballPlayerSpec.m; sourceTree = "<group>"; };
 		722736741948E278002A8E6A /* CardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardSpec.m; sourceTree = "<group>"; };
 		722736751948E278002A8E6A /* PlayingCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardSpec.m; sourceTree = "<group>"; };
+		A06AF6DE1B909F22008C5B24 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		A06AF6DF1B909F22008C5B24 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		A06AF6E71B90A198008C5B24 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		A06AF6E81B90A198008C5B24 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		A06AF6EA1B90A1B2008C5B24 /* BaseballCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseballCard.h; sourceTree = "<group>"; };
+		A06AF6EB1B90A1B2008C5B24 /* BaseballCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballCard.m; sourceTree = "<group>"; };
+		A06AF6ED1B90A7EA008C5B24 /* BaseballPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseballPlayer.h; sourceTree = "<group>"; };
+		A06AF6EE1B90A7EA008C5B24 /* BaseballPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseballPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +145,14 @@
 				44CFDEA5189C389300238AA4 /* AppDelegate.m */,
 				44CFDEA7189C389300238AA4 /* Images.xcassets */,
 				44CFDE9C189C389300238AA4 /* Supporting Files */,
+				A06AF6DE1B909F22008C5B24 /* Card.h */,
+				A06AF6DF1B909F22008C5B24 /* Card.m */,
+				A06AF6EA1B90A1B2008C5B24 /* BaseballCard.h */,
+				A06AF6EB1B90A1B2008C5B24 /* BaseballCard.m */,
+				A06AF6E71B90A198008C5B24 /* PlayingCard.h */,
+				A06AF6E81B90A198008C5B24 /* PlayingCard.m */,
+				A06AF6ED1B90A7EA008C5B24 /* BaseballPlayer.h */,
+				A06AF6EE1B90A7EA008C5B24 /* BaseballPlayer.m */,
 			);
 			path = "OOP-Cards-Model";
 			sourceTree = "<group>";
@@ -140,9 +160,9 @@
 		44CFDE9C189C389300238AA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				44CFDE9D189C389300238AA4 /* OOP-Cards-Model-Info.plist */,
 				44CFDE9E189C389300238AA4 /* InfoPlist.strings */,
 				44CFDEA1189C389300238AA4 /* main.m */,
+				44CFDE9D189C389300238AA4 /* OOP-Cards-Model-Info.plist */,
 				44CFDEA3189C389300238AA4 /* OOP-Cards-Model-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -299,8 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06AF6EC1B90A1B2008C5B24 /* BaseballCard.m in Sources */,
 				44CFDEA6189C389300238AA4 /* AppDelegate.m in Sources */,
+				A06AF6EF1B90A7EA008C5B24 /* BaseballPlayer.m in Sources */,
 				44CFDEA2189C389300238AA4 /* main.m in Sources */,
+				A06AF6E91B90A198008C5B24 /* PlayingCard.m in Sources */,
+				A06AF6E01B909F22008C5B24 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
