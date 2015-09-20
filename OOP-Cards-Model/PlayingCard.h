@@ -13,9 +13,11 @@
 
 @property (strong, nonatomic) NSString *suit;
 
-@property (nonatomic) NSUInteger rank;
+@property (nonatomic) NSNumber *rank;
 
--(instancetype)initWithSuit:(NSString *) suit rank:(NSUInteger) rank;
+-(instancetype)initWithSuit:(NSString *) suit rank:(NSNumber *) rank;
+
+-(instancetype)init;
 
 -(NSString *)description;
 

@@ -28,7 +28,10 @@
 }
 
 +(NSNumber *)convertLbsToKGsWithLbs:(NSNumber *)lbs{
-    return nil;
+    NSUInteger lbsInteger = [lbs floatValue];
+    NSNumber *result = @(roundf(lbsInteger * 0.453));
+    
+    return result;
 }
 
 @end

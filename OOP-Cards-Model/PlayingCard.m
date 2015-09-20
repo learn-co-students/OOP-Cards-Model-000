@@ -8,19 +8,70 @@
 
 #import "PlayingCard.h"
 
+@interface PlayingCard ()
+
+-(BOOL)isValidSuit:(NSString *)suit;
+-(BOOL)isValidRank:(NSNumber *)rank;
+
+@end
+
 @implementation PlayingCard
 
--(instancetype)initWithSuit:(NSString *) suit rank:(NSUInteger) rank{
+@synthesize suit = _suit;
+
+- (void) setSuit:(NSString *)suit {
+    if ([self isValidSuit:suit]) {
+        _suit = suit;
+    }
+}
+
+- (void) setRank:(NSNumber *)rank {
+    if ([self isValidRank:rank]) {
+        _rank = rank;
+    }
+}
+
+-(BOOL)isValidSuit:(NSString *)suit{
+    NSArray *validSuits = @[@"♥", @"♠", @"♣", @"♦"];
+    if ([validSuits containsObject:suit]) {
+        return YES;
+    }
+    return NO;
+}
+-(BOOL)isValidRank:(NSNumber *)rank{
+    if ([rank integerValue]>0 && [rank integerValue] <=13) {
+        return YES;
+    }
+    return NO;
+}
+
+
+-(instancetype)initWithSuit:(NSString *) suit rank:(NSNumber *) rank{
     self = [super init];
     if (self) {
-        _suit = suit;
-        _rank = rank;
+        if ([self isValidSuit:suit]) {
+            _suit = suit;
+        }else{
+            _suit = @"";
+        }
+        if ([self isValidRank:rank]) {
+            _rank = rank;
+        }else{
+            _rank = @0;
+        }
+        
     }
     return self;
 }
 
+-(instancetype)init{
+    self = [self initWithSuit:@"" rank:@0];
+    return self;
+}
+
 -(NSString *)description{
-    return nil;
+    NSString *descriptionOfCard = [NSString stringWithFormat:@""];
+    return descriptionOfCard;
 }
 
 @end
