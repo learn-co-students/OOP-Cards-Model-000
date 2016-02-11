@@ -112,6 +112,8 @@ describe(@"FISCardDeck", ^{
             
             expect(dealtCardsSet.count).to.equal(3);
         });
+        
+        
     });
     
     __block FISCardDeck *gatheringCardDeck;
@@ -134,6 +136,7 @@ describe(@"FISCardDeck", ^{
             expect(cardDeck.dealtCards.count).to.equal(0);
         });
         
+        // this test should be describing -drawNextCard not -gatherDealtCards...
         it(@"should return nil if the remainingCards array is empty", ^{
             FISCard *fiftyThirdCard = [gatheringCardDeck drawNextCard];
             
